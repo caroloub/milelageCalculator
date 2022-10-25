@@ -52,20 +52,23 @@
 
     <!-- Form - THIS IS THE MAIN COMPONENT-->
     <div class="container" id="contact-us">
-      <h2>Calculate Your Milelage</h2>
+      <h2>Calculate Your Average Milelage</h2>
       <form action="">
         <div class="row">
     <div class="col-md-4">
         <div class="form-group label-floating">
-            <label class="control-label">Time of Mile</label>
+            <label class="control-label">Length of your Run</label>
+            <input type="text" class="form-control" v-model="act" >
+        </div>
+    </div>
+     <div class="col-md-4">
+        <div class="form-group label-floating">
+            <label class="control-label">Number of Miles</label>
             <input type="text" class="form-control" v-model="act" >
         </div>
     </div>
     </div>
     </div>
-      <div>
-    <button id="addMile">Add Mile</button>
-      </div>
       <input type="submit" value="Submit">
  </form>
 </div>
