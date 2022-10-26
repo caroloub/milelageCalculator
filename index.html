@@ -54,17 +54,20 @@
     <div class="container" id="contact-us">
       <h2>Calculate Your Average Milelage</h2>
 
+ <!--code taken from: https://www.geeksforgeeks.org/html-calculator/-->
 <body>
     <table id="calcu">
         <tr>
             <td colspan="3"><input type="text" id="Length of Run">Type the Length of your Run</td>
             <td><input type="text" id="Number of Miles">Type the Number of Miles you Ran</td>
-            <!-- clr() function will call clr to clear all value -->
-            <td><input type="button" value="c" onclick="clr()" /> </td>
         </tr>
+        <tr>
+          <td><input type="text" id="Number of Miles">Type the Number of Miles you Ran</td>
+      </tr>
         <tr>
             <!-- solve function call function solve to evaluate value -->
             <td><input type="button" value="=" onclick="solve()"> </td>
+          <td><input type="button" value="c" onclick="clr()" /> </td>
         </tr>
       <tr>
             <td><input type="text" id="result">Result</td>
