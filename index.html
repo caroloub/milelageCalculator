@@ -53,31 +53,12 @@
     <!-- Form - THIS IS THE MAIN COMPONENT-->
     <div class="container" id="contact-us">
       <h2>Calculate Your Average Milelage</h2>
-      <form action="">
-        <div class="row">
-    <div class="col-md-4">
-        <div class="form-group label-floating">
-            <label class="control-label">Length of your Run</label>
-            <input type="text" class="form-control" v-model="act" >
-        </div>
-    </div>
-     <div class="col-md-4">
-        <div class="form-group label-floating">
-            <label class="control-label">Number of Miles</label>
-            <input type="text" class="form-control" v-model="act" >
-        </div>
-    </div>
-    </div>
-    </div>
-      <input type="submit" value="Submit">
- </form>
-</div>
 
 <body>
     <table id="calcu">
         <tr>
-            <td colspan="3"><input type="text" id="Length of Run"></td>
-            <td><input type="text" id="Number of Miles"></td>
+            <td colspan="3"><input type="text" id="Length of Run">Type the Length of your Run</td>
+            <td><input type="text" id="Number of Miles">Type the Number of Miles you Ran</td>
             <!-- clr() function will call clr to clear all value -->
             <td><input type="button" value="c" onclick="clr()" /> </td>
         </tr>
@@ -86,7 +67,7 @@
             <td><input type="button" value="=" onclick="solve()"> </td>
         </tr>
       <tr>
-            <td><input type="text" id="result"></td>
+            <td><input type="text" id="result">Result</td>
         </tr>
     </table>
   
@@ -131,6 +112,7 @@
             document.getElementById("Number of Miles").value = ""
         }
     </script>
+  </div>
 
     <!-- Modal -->
     <div class="container">
