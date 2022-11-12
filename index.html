@@ -73,6 +73,29 @@
     </table>
   <br/>
   
+  <h2>Calculate Your What Your Calories Burned will Be</h2>
+
+<body>
+    <table id="calories">
+        <tr>
+            <td colspan="3"><input type="text" name="Time" id="Minutes">Length (minutes) of your Run</td>
+        </tr>
+        <tr>
+          <td><input type="text" name="Pace" id="Pace">Pace (MPH)</td>
+      </tr>
+      <tr>
+          <td><input type="text" name="Weight" id="Weight">Weight in Pounds</td>
+      </tr>
+        <tr>
+            <!-- solve function call function solve to evaluate value -->
+            <td><input type="button" id="calculation" value="Calculate" onclick="calculate()"></td>
+        </tr>
+      <tr>
+            <td><input type="text" id="result">Result</td>
+        </tr>
+    </table>
+  <br/>
+  
   <h2>Convert Miles to Kilometers</h2>
     <table cellspacing=0 cellpadding=5 border=0>
 
@@ -135,6 +158,17 @@
             let x = document.getElementById("Kilo").value
             let y = x/1.609
             document.getElementById("Mile").value = y
+        }
+      
+      // Function that evaluates the digit and return result
+        function calculate() {
+            let x = document.getElementById("minutes").value
+            let y = document.getElementById("pace").value
+            let z = document.getElementById("weight").value
+            let a = y * 1.64 * 3.5
+            let b = (weight/2.205)/200
+            let c = a * b
+            document.getElementById("Mile").value = c*x
         }
   
         // Function that evaluates the digit and return result
