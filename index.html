@@ -91,7 +91,7 @@
             <td><input type="button" id="calculation" value="Calculate" onclick="calculate()"></td>
         </tr>
       <tr>
-            <td><input type="text" id="result">Result</td>
+            <td><input type="text" id="r">Result</td>
         </tr>
     </table>
   <br/>
@@ -168,7 +168,8 @@
             let a = y * 1.64 * 3.5
             let b = (weight/2.205)/200
             let c = a * b
-            document.getElementById("Mile").value = c*x
+            let d = c*x
+            document.getElementById("r").value = d
         }
   
         // Function that evaluates the digit and return result
