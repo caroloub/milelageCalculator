@@ -74,9 +74,9 @@
   <br/>
   
   <h2>Convert Miles to Kilometers</h2>
-    <table cellspacing=0 cellpadding=5 border=0 align=center>
+    <table cellspacing=0 cellpadding=5 border=0>
 
-    <tr align=right>
+    <tr>
      <td><b>Miles:</b> <input type="text"  id="M" size=6></td>
      <td>&lt;-----></td>
      <td><b>Kilometers:</b> <input type="text"  id="K" size=6></td>
@@ -86,6 +86,24 @@
   <br/>
 <div class="form-inline">
    <div class="col-sm-2"><input type="button" id="convert" value="Convert" onclick="convert()"></div>  
+   <div class="col-sm-3"></div>
+</div> 
+  
+  <br/>
+  
+  <h2>Convert Kilometers to Miles</h2>
+    <table cellspacing=0 cellpadding=5 border=0>
+
+    <tr>
+     <td><b>Kilometers:</b> <input type="text"  id="Kilo" size=6></td>
+     <td>&lt;-----></td>
+     <td><b>Miles:</b> <input type="text"  id="Mile" size=6></td>
+    </tr>
+      
+  </table>
+  <br/>
+<div class="form-inline">
+   <div class="col-sm-2"><input type="button" id="convert2" value="Convert" onclick="convert2()"></div>  
    <div class="col-sm-3"></div>
 </div> 
   
@@ -110,6 +128,13 @@
             let x = document.getElementById("M").value
             let y = x*1.609
             document.getElementById("K").value = y
+        }
+      
+      // Function that evaluates the digit and return result
+        function convert2() {
+            let x = document.getElementById("Kilo").value
+            let y = x/1.609
+            document.getElementById("Mile").value = y
         }
   
         // Function that evaluates the digit and return result
