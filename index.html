@@ -77,9 +77,9 @@
     <table cellspacing=0 cellpadding=5 border=0 align=center>
 
     <tr align=right>
-     <td><b>Miles (F&#186;):</b> <input type="text"  name="M" size=6></td>
+     <td><b>Miles:</b> <input type="text"  name="M" size=6></td>
      <td>&lt;-----></td>
-     <td><b>Kilometers (C&#186;):</b> <input type="text"  name="K" size=6></td>
+     <td><b>Kilometers:</b> <input type="text"  name="K" size=6></td>
     </tr>
       
   </table>
@@ -109,7 +109,7 @@
         function convert() {
             let x = document.getElementByName("M").value
             let y = x*1.609
-            document.getElementByName("result").value = y
+            document.getElementByName("K").value = y
         }
   
         // Function that evaluates the digit and return result
