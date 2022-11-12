@@ -78,20 +78,20 @@
 <body>
     <table id="calories">
         <tr>
-            <td colspan="3"><input type="text" name="Time" id="Minutes">Length (minutes) of your Run</td>
+            <td colspan="3"><input type="text" id="mins">Length (minutes) of your Run</td>
         </tr>
         <tr>
-          <td><input type="text" name="Pace" id="Pace">Pace (MPH)</td>
+          <td><input type="text" id="pace">Pace (MPH)</td>
       </tr>
       <tr>
-          <td><input type="text" name="Weight" id="Weight">Weight in Pounds</td>
+          <td><input type="text" id="weight">Weight in Pounds</td>
       </tr>
         <tr>
             <!-- solve function call function solve to evaluate value -->
             <td><input type="button" id="calculation" value="Calculate" onclick="calculate()"></td>
         </tr>
       <tr>
-            <td><input type="text" id="r">Result</td>
+            <td><input type="text" id="myResult">Result</td>
         </tr>
     </table>
   <br/>
@@ -162,14 +162,14 @@
       
       // Function that evaluates the digit and return result
         function calculate() {
-            let x = document.getElementById("minutes").value
+            let x = document.getElementById("mins").value
             let y = document.getElementById("pace").value
             let z = document.getElementById("weight").value
             let a = y * 1.64 * 3.5
             let b = (weight/2.205)/200
             let c = a * b
             let d = c*x
-            document.getElementById("r").value = d
+            document.getElementById("myResult").value = d
         }
   
         // Function that evaluates the digit and return result
