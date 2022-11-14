@@ -169,7 +169,11 @@
             let b = (z/2.205)/200
             let c = a * b
             let d = c*x
-            document.getElementById("myResult").value = d
+            if(x < 0 || y < 0 || z < 0){
+              document.getElementById("myResult").value = "NaN"
+            }else{
+              document.getElementById("myResult").value = d
+            }
         }
   
         // Function that evaluates the digit and return result
